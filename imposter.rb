@@ -5,28 +5,28 @@
 class Imposter < Formula
   desc "Reliable, scriptable and extensible mock server for REST APIs, OpenAPI (and Swagger) specifications, Salesforce and HBase APIs."
   homepage "https://github.com/gatehill/imposter-cli"
-  version "0.3.1"
+  version "0.3.3"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.1/imposter_0.3.1_macOS_x86_64.tar.gz"
-      sha256 "7ee1eefe3553bc8144ae1ad7b1e0b38d3c4a2d0901a7ee8d2f9ecc02ff10491a"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.3/imposter_0.3.3_macOS_x86_64.tar.gz"
+      sha256 "9090e808770fe1f9b64fd250a19af2ae4596e0c6d2215d736d0c6cddd0036c47"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.1/imposter_0.3.1_Linux_x86_64.tar.gz"
-      sha256 "69adaa9c4a1de1744fb221f58cc8b89b42935a3dc14b549fbdffdc4ae92bad29"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.3/imposter_0.3.3_Linux_x86_64.tar.gz"
+      sha256 "116d695facfbe684e4850b870c643d673a30619f2f8738e31774662e89f25047"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.1/imposter_0.3.1_Linux_armv6.tar.gz"
-      sha256 "f4bd4da5eb2bbdeef78f10622ceb38949337f110743c211b0d6394395cec2be4"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.3/imposter_0.3.3_Linux_armv6.tar.gz"
+      sha256 "36f3ec2d933f5e9f33087ade34f4e91f4dae828ab7b40da47f4e3e35339556e3"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.1/imposter_0.3.1_Linux_arm64.tar.gz"
-      sha256 "7602f77b6cfdbb28d822b7e1a15c021454984bdd4651ac4906dfd5c1b8f324af"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.3/imposter_0.3.3_Linux_arm64.tar.gz"
+      sha256 "708be0ca07b4ba760435a043a2d99c5fbcf6e05ab0c679d78e821735b6d24f0b"
     end
   end
 
