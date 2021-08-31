@@ -5,28 +5,32 @@
 class Imposter < Formula
   desc "Reliable, scriptable and extensible mock server for REST APIs, OpenAPI (and Swagger) specifications, Salesforce and HBase APIs."
   homepage "https://github.com/gatehill/imposter-cli"
-  version "0.3.4"
+  version "0.3.5"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.4/imposter_0.3.4_macOS_x86_64.tar.gz"
-      sha256 "494955cb8e6036293151d826b880a93a5880e50e43a3dd77cb6bcc7614b17baf"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.5/imposter_0.3.5_macOS_x86_64.tar.gz"
+      sha256 "8e8a2aec74d1e6431160f0ebdaa9c281cef1aafaae287cccecfd4e581d69ba0e"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.5/imposter_0.3.5_macOS_arm64.tar.gz"
+      sha256 "6dd26d432f0754544bc8093d6ab4952bfe334412504cbb1b236d76153edd3cd6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.4/imposter_0.3.4_Linux_x86_64.tar.gz"
-      sha256 "903e7fb8c98c1f47d0d3a85ecf5bbcb3c6e18b84d2525b67662759d7bbeccee7"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.5/imposter_0.3.5_Linux_x86_64.tar.gz"
+      sha256 "ce49824e478a28b9193c1d47f417ba127041f92e953782eae125de113bf9b995"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.4/imposter_0.3.4_Linux_armv6.tar.gz"
-      sha256 "9a9f9ec963cef0cfc5f6a5f3c956333052b038ad58b7c3ef8c31769119d3f012"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.5/imposter_0.3.5_Linux_armv6.tar.gz"
+      sha256 "573243d3976594a8d99297a0b855b3dcc0b1399915eec683e2243ec8398ad65c"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.4/imposter_0.3.4_Linux_arm64.tar.gz"
-      sha256 "2458b93e6c59e70d6b0b9fd66863cb2410fa9b4c6c10e1bbb8672cb9f1cf0852"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.5/imposter_0.3.5_Linux_arm64.tar.gz"
+      sha256 "2565a7484973c2d19c507103003e46d8e413d78be4b7303dd539c8ed4f229465"
     end
   end
 
