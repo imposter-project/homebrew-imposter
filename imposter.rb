@@ -5,28 +5,28 @@
 class Imposter < Formula
   desc "Reliable, scriptable and extensible mock server for REST APIs, OpenAPI (and Swagger) specifications, Salesforce and HBase APIs."
   homepage "https://github.com/gatehill/imposter-cli"
-  version "0.3.3"
+  version "0.3.4"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.3/imposter_0.3.3_macOS_x86_64.tar.gz"
-      sha256 "9090e808770fe1f9b64fd250a19af2ae4596e0c6d2215d736d0c6cddd0036c47"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.4/imposter_0.3.4_macOS_x86_64.tar.gz"
+      sha256 "494955cb8e6036293151d826b880a93a5880e50e43a3dd77cb6bcc7614b17baf"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.3/imposter_0.3.3_Linux_x86_64.tar.gz"
-      sha256 "116d695facfbe684e4850b870c643d673a30619f2f8738e31774662e89f25047"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.4/imposter_0.3.4_Linux_x86_64.tar.gz"
+      sha256 "903e7fb8c98c1f47d0d3a85ecf5bbcb3c6e18b84d2525b67662759d7bbeccee7"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.3/imposter_0.3.3_Linux_armv6.tar.gz"
-      sha256 "36f3ec2d933f5e9f33087ade34f4e91f4dae828ab7b40da47f4e3e35339556e3"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.4/imposter_0.3.4_Linux_armv6.tar.gz"
+      sha256 "9a9f9ec963cef0cfc5f6a5f3c956333052b038ad58b7c3ef8c31769119d3f012"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.3/imposter_0.3.3_Linux_arm64.tar.gz"
-      sha256 "708be0ca07b4ba760435a043a2d99c5fbcf6e05ab0c679d78e821735b6d24f0b"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.3.4/imposter_0.3.4_Linux_arm64.tar.gz"
+      sha256 "2458b93e6c59e70d6b0b9fd66863cb2410fa9b4c6c10e1bbb8672cb9f1cf0852"
     end
   end
 
