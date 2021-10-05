@@ -5,32 +5,32 @@
 class Imposter < Formula
   desc "Reliable, scriptable and extensible mock server for REST APIs, OpenAPI (and Swagger) specifications, Salesforce and HBase APIs."
   homepage "https://github.com/gatehill/imposter-cli"
-  version "0.6.15"
+  version "0.6.16"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.15/imposter_0.6.15_macOS_x86_64.tar.gz"
-      sha256 "29d45ceeeaff33b421e0101d0075f3bd7d46d4bcc77a54eb506bf7dd69707be7"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.16/imposter_0.6.16_macOS_x86_64.tar.gz"
+      sha256 "a846d62905488ac3e5560dafd57e85d48cb8143324389bcddaa2cafd3f3cdb75"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.15/imposter_0.6.15_macOS_arm64.tar.gz"
-      sha256 "eeaf4e33ee14518b83aa982415150fb9070764a69e4f117be5bf4fc4432c99e2"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.16/imposter_0.6.16_macOS_arm64.tar.gz"
+      sha256 "d5b908aee35d3f2a0e421dd656f180beb07175b4dfaedd7770576891d935a3ea"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.15/imposter_0.6.15_Linux_x86_64.tar.gz"
-      sha256 "f6a059c030085f9befc08c75ef4985b90496f6e50725b9f8b1cc93386268cc26"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.16/imposter_0.6.16_Linux_x86_64.tar.gz"
+      sha256 "36cf516753bf434438096c8c4879ff6453705743c73a2da7f97c773138d8efa9"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.15/imposter_0.6.15_Linux_armv6.tar.gz"
-      sha256 "5e7d9e57aa67dafe6eeab1859a2d191375b3a7fd0d30813cdaaab2a6f1de9fa0"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.16/imposter_0.6.16_Linux_armv6.tar.gz"
+      sha256 "a6a9785fabc5308210350c8f503108cf08286fe9a270e83860a03dd2a793175e"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.15/imposter_0.6.15_Linux_arm64.tar.gz"
-      sha256 "97b87ff0bd426fe7d60e9f4aabd1468ca1f2ce7806246c44cdb9cc50286f27c3"
+      url "https://github.com/gatehill/imposter-cli/releases/download/v0.6.16/imposter_0.6.16_Linux_arm64.tar.gz"
+      sha256 "32fbf2ce7a9742c05aee646ec9f4e0f7db05eafe014cd2ac0ce7fafdbeb41982"
     end
   end
 
