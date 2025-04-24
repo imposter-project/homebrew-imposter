@@ -5,20 +5,20 @@
 class Imposter < Formula
   desc "Reliable, scriptable and extensible mock server for REST APIs, OpenAPI (and Swagger) specifications, SOAP/WSDL web services, Salesforce and HBase APIs."
   homepage "https://www.imposter.sh"
-  version "1.1.2"
+  version "1.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.2/imposter-cli_darwin_amd64.tar.gz"
-      sha256 "9173aa5c957c01e748c19425fb0ec3ed21a0460a2f349662c0ff2decd1f6cf3d"
+      url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.3/imposter-cli_darwin_amd64.tar.gz"
+      sha256 "0282606e5172ca6941b1af1979ecc5c1a8e4c117426d950aa79946bba5cbca07"
 
       def install
         bin.install "imposter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.2/imposter-cli_darwin_arm64.tar.gz"
-      sha256 "61940715d0b544461b5f44b0b77b76155562e6befe63a6a9a6e620a01452cd35"
+      url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.3/imposter-cli_darwin_arm64.tar.gz"
+      sha256 "48b2a0e0f36f892714ac82a64f4230ba37f99b624d6a81ea2bdb9cf54b3af522"
 
       def install
         bin.install "imposter"
@@ -29,8 +29,8 @@ class Imposter < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.2/imposter-cli_linux_amd64.tar.gz"
-        sha256 "8ad4418604b241edee176956910176f7604dba358b000f669b70f488be9128e2"
+        url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.3/imposter-cli_linux_amd64.tar.gz"
+        sha256 "c2ff8e3a0f957955154cfd5129d9ef7702f4cd7d5142a0a67385edf73031d7ef"
 
         def install
           bin.install "imposter"
@@ -39,8 +39,8 @@ class Imposter < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.2/imposter-cli_linux_arm.tar.gz"
-        sha256 "7fa6f64600b157b21bec3e1e82b8dc9f480a965910579f8587b47c20e67ec6df"
+        url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.3/imposter-cli_linux_arm.tar.gz"
+        sha256 "f32f66423287250af9dd3e152f0c3c112985b29d27f446013a71de223a05e07e"
 
         def install
           bin.install "imposter"
@@ -49,8 +49,8 @@ class Imposter < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.2/imposter-cli_linux_arm64.tar.gz"
-        sha256 "bb263d454ef45784570ea5d0c11b493c03e3b938884ef06dfe2f4e6855ef44fd"
+        url "https://github.com/imposter-project/imposter-cli/releases/download/v1.1.3/imposter-cli_linux_arm64.tar.gz"
+        sha256 "849654b93f85f2e77672faf534cff057301bfde0f1bbd4a25a03a07a90200886"
 
         def install
           bin.install "imposter"
