@@ -7,6 +7,7 @@ This repository contains the Homebrew formula for the [Imposter](https://www.imp
 Install using Homebrew:
 
     brew tap imposter-project/imposter
+    brew trust imposter-project/imposter
     brew install imposter
 
 ## Learn more
